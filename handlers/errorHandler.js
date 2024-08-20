@@ -5,12 +5,12 @@ const errorHandler = (error, req, res, next) => {
     if(error){
         if(error.message){
             res.status(400).json({
-                status:"failed",
+                status:"failed show me again",
                 error: error.message // will display your error message.
             });
         } else{
             res.status(400).json({
-                status:"failed",
+                status:"failed  show me again",
                 error: error
             });
         }
