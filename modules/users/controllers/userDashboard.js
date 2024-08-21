@@ -33,7 +33,7 @@ const userDashboard = async (req, res) => {
 
   res.status(200).json({
     status: "success",
-    message: `${greeting}  ${getUser.name} 👋`,
+    message: `${greeting}  ${getUser.name}👋`,
     data: getUser,
     transactions,
   });
