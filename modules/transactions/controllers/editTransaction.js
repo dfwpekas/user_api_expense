@@ -4,7 +4,7 @@ const validator = require("validator")
 const editTransaction = async (req, res) => {
 
     const transactionsModel = mongoose.model("transactions");
-    const usersModel = mongoose.model("users");
+   
 
     const {transaction_id, remarks, amount, transaction_type} = req.body;
 
@@ -36,7 +36,7 @@ const editTransaction = async (req, res) => {
 )
 
     res.status(200).json({
-        status: "Edit transaction."
+        status: "Transaction edited successfully."
     })
 
 }

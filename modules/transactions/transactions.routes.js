@@ -9,8 +9,6 @@ const editTransaction = require("./controllers/editTransaction");
 const transactionRoutes = express.Router();
 
 // ** Routes
-
-
 transactionRoutes.use(auth); // auth middleware is run first before dashboard...
 
 // ** Protected routes
